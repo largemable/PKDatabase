@@ -2,7 +2,7 @@
 	text-align: center;
 	display: grid;
 	grid-template-columns: 250px 1fr 1fr;
-	grid-template-rows: 1fr 3fr;
+	grid-template-rows: 250px 3fr;
 }
 .header {
 	background-color: black;
