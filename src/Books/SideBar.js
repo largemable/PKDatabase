@@ -3,7 +3,7 @@ import Books from './Books';
 const SideBar = () => {
 	return (
 		<div>
-			<h3>Side Bar</h3>
+			<h3>works</h3>
 			<Books />
 		</div>
 	);

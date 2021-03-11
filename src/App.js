@@ -9,7 +9,16 @@ function App() {
 	return (
 		<div className='App'>
 			<div className='profilePicture'>
-				<img src='' alt='' />
+				<img
+					src='https://litreactor.com/sites/default/files/imagecache/header/images/column/headers/philip-k-dick-primer.jpg'
+					alt='Photograph of Philip K Dick'
+					width='250px'
+				/>{' '}
+				<img
+					src='https://litreactor.com/sites/default/files/imagecache/header/images/column/headers/philip-k-dick-primer.jpg'
+					alt='Photograph of Philip K Dick'
+					width='250px'
+				/>
 			</div>
 			<div className='header'>
 				<Header />

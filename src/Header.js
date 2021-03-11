@@ -4,8 +4,8 @@ const Header = () => {
 	return (
 		<div>
 			<header>
-				<h1>PKDatabase</h1>
-				<h2>A database of the works of the great american sci-fi writer, Philip K Dick</h2>
+				<h1>PKDb</h1>
+				<h2>A Database for the works of Philip K Dick</h2>
 			</header>
 		</div>
 	);
