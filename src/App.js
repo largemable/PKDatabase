@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 import SideBar from './Books/SideBar';
 import BookDetails from './Books/BookDetails';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App() {
 	return (

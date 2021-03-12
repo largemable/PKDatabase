@@ -30,6 +30,7 @@ main {
 	background-color: rgb(206, 200, 200);
 	grid-column: 2 / span 2;
 	border-radius: 12px;
+	padding: 50px;
 }
 .profilePic {
 	max-height: 100%;

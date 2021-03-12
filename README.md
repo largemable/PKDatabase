@@ -7,3 +7,11 @@ current roadblock is getting that key to work in my next API call... tried route
 //SOLVED!
 
 right now I'm having trouble loading my pages. my book details won't load unless i refresh the page. additionally, sometimes the data isn't read, like when I am trying to load a new book up, I get the error "cannot read property value of 'undefined' " but that isn't consistent and I also double checked the API and the value definitely exists.
+
+//SOLVED!
+
+//next steps
+// filter the fetch further so that it does not return anything that doesn't have a description value
+// add cover images to bookDetails
+// fill in the About component and create the proper routes and links
+//dynamically change the background color based on the book cover (too crazy?)
