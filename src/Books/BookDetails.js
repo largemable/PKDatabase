@@ -10,7 +10,7 @@ const BookDetails = ({ match }) => {
 				console.log(res);
 				setBookDetails(res);
 			});
-	}, []);
+	}, [match.params.book]);
 	console.log(bookDetails);
 	if (!bookDetails) {
 		return null;
