@@ -14,7 +14,10 @@ const Books = () => {
 	let cards = booksJson.map((book) => {
 		return (
 			<div>
-				<Link to={`${book.key.slice(6)}`} key={book.key.slice(6)}>
+				<Link
+					to={`${book.key.slice(6)}`}
+					key={book.key.slice(6)}
+					style={{ textDecoration: 'none' }}>
 					<h4>{book.title}</h4>
 				</Link>
 			</div>

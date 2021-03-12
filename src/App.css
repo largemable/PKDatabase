@@ -7,11 +7,19 @@
 	padding: 10px;
 	background-color: rgb(255, 254, 249);
 }
+.home {
+}
 .header {
+	display: flex;
 	background-color: black;
-	color: white;
+	background-image: url('philip-k-dick.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: black;
 	grid-column: 2 / span 2;
 	border-radius: 12px;
+	align-items: flex-start;
 }
 h1 {
 	font-size: 75px;

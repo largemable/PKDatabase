@@ -2,19 +2,21 @@ import './App.css';
 import Header from './Header';
 import SideBar from './Books/SideBar';
 import BookDetails from './Books/BookDetails';
-import { Route } from 'react-router-dom';
-
+import { Route, Link } from 'react-router-dom';
+import About from './About/About';
+import Home from './Home';
+import image from './pkd-background.jpg';
 function App() {
 	return (
 		<div className='App'>
 			<div className='about'>
-				<img
-					src='https://litreactor.com/sites/default/files/imagecache/header/images/column/headers/philip-k-dick-primer.jpg'
-					alt='Photograph of Philip K Dick'
-					width='250px'
-					className='profilePic'
-				/>
-				<h4>ABOUT PHILIP K DICK</h4>
+				<img src={image} alt='portrait of the author' width='100%' />
+				<Link to='/About' style={{ textDecoration: 'none' }}>
+					<h4>ABOUT PHILIP K DICK</h4>
+				</Link>
+				<Link to='/' style={{ textDecoration: 'none' }}>
+					<h4>HOME</h4>
+				</Link>
 			</div>
 			<div className='header'>
 				<Header />
@@ -23,6 +25,8 @@ function App() {
 				<Route path='/' component={SideBar} />
 			</nav>
 			<main>
+				<Route path='/' exact component={Home} />
+				<Route path='/About' exact component={About} />
 				<Route
 					path='/:book'
 					render={(routerProps) => <BookDetails match={routerProps.match} />}
