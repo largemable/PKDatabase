@@ -14,7 +14,7 @@ const Books = () => {
 	let cards = booksJson.map((book) => {
 		return (
 			<div>
-				<Link to={`${book.key}`} key={book.key}>
+				<Link to={`${book.key.slice(6)}`} key={book.key.slice(6)}>
 					<h4>{book.title}</h4>
 				</Link>
 			</div>

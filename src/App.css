@@ -31,3 +31,9 @@ main {
 	grid-column: 2 / span 2;
 	border-radius: 12px;
 }
+.profilePic {
+	max-height: 100%;
+	max-width: 100%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
