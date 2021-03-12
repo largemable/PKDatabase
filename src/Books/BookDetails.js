@@ -17,10 +17,20 @@ const BookDetails = ({ match }) => {
 	}
 	return (
 		<div>
-			<img
-				src='http://covers.openlibrary.org/b/isbn/0425050513-L.jpg'
+			{/* <img
+				// make this dynamic
+				src={`https://covers.openlibrary.org/b/isbn/${bookDetails.covers[0]}-L.jpg`}
 				alt='book cover'
-			/>
+			/> */}
+			{bookDetails.covers ? (
+				<img
+					// make this dynamic
+					src={`http://covers.openlibrary.org/b/id/${bookDetails.covers[0]}-L.jpg`}
+					alt='book cover'
+				/>
+			) : (
+				' '
+			)}
 			<h4>{bookDetails.title}</h4>
 			{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
 		</div>
