@@ -12,6 +12,9 @@ const BookDetails = ({ match }) => {
 			});
 	}, []);
 	console.log(bookDetails);
+	if (!bookDetails) {
+		return null;
+	}
 	return (
 		<div>
 			<img
@@ -19,7 +22,7 @@ const BookDetails = ({ match }) => {
 				alt='book cover'
 			/>
 			<h4>{bookDetails.title}</h4>
-			<p>{bookDetails.description.value}</p>
+			{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
 		</div>
 	);
 };
