@@ -15,6 +15,7 @@ const BookDetails = ({ match }) => {
 	if (!bookDetails) {
 		return null;
 	}
+
 	return (
 		<div>
 			{/* <img
@@ -23,15 +24,22 @@ const BookDetails = ({ match }) => {
 				alt='book cover'
 			/> */}
 			{bookDetails.covers ? (
+				// bookDetails.covers.map((cover) => {
+				// 	return (
+				// 	<img src={`http://covers.openlibrary.org/b/id/${cover}-M.jpg`}>)
+				// }
 				<img
 					// make this dynamic
-					src={`http://covers.openlibrary.org/b/id/${bookDetails.covers[0]}-L.jpg`}
+					src={`http://covers.openlibrary.org/b/id/${
+						bookDetails.covers[bookDetails.covers.length - 1]
+					}-L.jpg`}
 					alt='book cover'
 				/>
 			) : (
 				' '
 			)}
 			<h4>{bookDetails.title}</h4>
+			{bookDetails.excerpts ? <h5>{bookDetails.excerpts[0].excerpt}</h5> : ''}
 			{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
 		</div>
 	);
