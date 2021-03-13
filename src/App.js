@@ -10,13 +10,7 @@ function App() {
 	return (
 		<div className='App'>
 			<div className='about'>
-				<img src={image} alt='portrait of the author' width='100%' />
-				<Link to='/About' style={{ textDecoration: 'none' }}>
-					<h4>ABOUT PHILIP K DICK</h4>
-				</Link>
-				<Link to='/' style={{ textDecoration: 'none' }}>
-					<h4>HOME</h4>
-				</Link>
+				{/* <img src={image} alt='portrait of the author' width='100%' /> */}
 			</div>
 			<div className='header'>
 				<Header />
