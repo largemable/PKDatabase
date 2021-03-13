@@ -29,14 +29,15 @@
 	display: flex;
 	background-color: black;
 	background-image: url('philip-k-dick.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
+	/* background-repeat: no-repeat; */
+	background-position: top 30% right;
 	background-size: cover;
 	color: black;
 	grid-column: 1 / span 3;
 	grid-row: 1;
 	border-radius: 12px;
 	align-items: flex-start;
+	padding: 40px;
 }
 h1 {
 	font-size: 75px;
