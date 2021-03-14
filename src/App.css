@@ -39,9 +39,10 @@
 	align-items: flex-start;
 	padding: 40px;
 }
-h1 {
+.title {
 	font-size: 75px;
 	margin: 0 auto;
+	text-shadow: -2px 2px rgba(201, 191, 191, 0.58);
 }
 h2 {
 	font-size: 12px;

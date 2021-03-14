@@ -5,7 +5,7 @@ import BookDetails from './Books/BookDetails';
 import { Route, Link } from 'react-router-dom';
 import About from './About/About';
 import Home from './Home';
-import image from './pkd-background.jpg';
+
 function App() {
 	return (
 		<div className='App'>
@@ -20,7 +20,6 @@ function App() {
 			</nav>
 			<main>
 				<Route path='/' exact component={Home} />
-				<Route path='/About' exact component={About} />
 				<Route
 					path='/:book'
 					render={(routerProps) => <BookDetails match={routerProps.match} />}

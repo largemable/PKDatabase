@@ -10,6 +10,29 @@ right now I'm having trouble loading my pages. my book details won't load unless
 
 //SOLVED!
 
+//ISSUE
+
+One book is not rendering, error reads as follows-
+
+×
+Error: Objects are not valid as a React child (found: object with keys {type, value}). If you meant to render a collection of children, use an array instead.
+▶ 20 stack frames were collapsed.
+(anonymous function)
+src/Books/BookDetails.js:11
+8 | .then((res) => res.json())
+9 | .then((res) => {
+10 | console.log(res);
+
+> 11 | setBookDetails(res);
+
+     | ^  12 | 		});
+
+13 | }, [match.params.book]);
+14 | console.log(bookDetails);
+View compiled
+This screen is visible only in development. It will not appear if the app crashes in production.
+Open your browser’s developer console to further inspect this error. Click the 'X' or hit ESC to dismiss this message.
+
 //next steps
 // filter the fetch further so that it does not return anything that doesn't have a description value
 // add cover images to bookDetails

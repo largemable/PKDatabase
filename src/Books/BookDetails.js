@@ -11,11 +11,25 @@ const BookDetails = ({ match }) => {
 				setBookDetails(res);
 			});
 	}, [match.params.book]);
+
 	console.log(bookDetails);
 	if (!bookDetails) {
 		return null;
 	}
-
+	let excerptDetails = '';
+	if (bookDetails.excerpts && bookDetails.excerpts.length > 0) {
+		let excerpt = bookDetails.excerpts[0];
+		if (excerpt.value) {
+			excerptDetails = excerpt.value;
+		} else if (excerpt.excerpt) {
+			excerpt = excerpt.excerpt;
+			if (excerpt.value) {
+				excerptDetails = excerpt.value;
+			} else {
+				excerptDetails = excerpt;
+			}
+		}
+	}
 	return (
 		<div>
 			{/* <img
@@ -39,7 +53,7 @@ const BookDetails = ({ match }) => {
 				' '
 			)}
 			<h4>{bookDetails.title}</h4>
-			{bookDetails.excerpts ? <h5>{bookDetails.excerpts[0].excerpt}</h5> : ''}
+			<h5>{excerptDetails}</h5>
 			{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
 		</div>
 	);
