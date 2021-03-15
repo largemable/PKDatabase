@@ -31,19 +31,9 @@ const BookDetails = ({ match }) => {
 		}
 	}
 	return (
-		<div>
-			{/* <img
-				// make this dynamic
-				src={`https://covers.openlibrary.org/b/isbn/${bookDetails.covers[0]}-L.jpg`}
-				alt='book cover'
-			/> */}
+		<div className='book-details'>
 			{bookDetails.covers ? (
-				// bookDetails.covers.map((cover) => {
-				// 	return (
-				// 	<img src={`http://covers.openlibrary.org/b/id/${cover}-M.jpg`}>)
-				// }
 				<img
-					// make this dynamic
 					src={`http://covers.openlibrary.org/b/id/${
 						bookDetails.covers[bookDetails.covers.length - 1]
 					}-L.jpg`}
@@ -52,9 +42,11 @@ const BookDetails = ({ match }) => {
 			) : (
 				' '
 			)}
-			<h4>{bookDetails.title}</h4>
-			<h5>{excerptDetails}</h5>
-			{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
+			<div className='book-description'>
+				<h4>{bookDetails.title}</h4>
+				<h5>{excerptDetails}</h5>
+				{bookDetails.description ? <p>{bookDetails.description.value}</p> : ''}
+			</div>
 		</div>
 	);
 };

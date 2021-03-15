@@ -19,7 +19,7 @@ const Books = () => {
 					to={`/book${book.key.slice(6)}`}
 					key={book.key.slice(6)}
 					style={{ textDecoration: 'none' }}>
-					<h4 className='book_title'>{book.title}</h4>
+					<p className='book_title'>{book.title}</p>
 				</Link>
 			</div>
 		);

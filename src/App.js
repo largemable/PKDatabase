@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header';
 import SideBar from './Books/SideBar';
 import BookDetails from './Books/BookDetails';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import About from './About/About';
 import Home from './Home';
 
@@ -25,7 +25,7 @@ function App() {
 				/>
 			</main>
 			<footer>
-				<a href='http://openlibrary.org' target='_blank'>
+				<a href='http://openlibrary.org' target='_blank' rel='noreferrer'>
 					Open Library
 				</a>
 			</footer>
