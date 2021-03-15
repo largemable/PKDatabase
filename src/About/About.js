@@ -18,7 +18,7 @@ const About = () => {
 				often drew upon his own life experiences, especially those of drug
 				abuse, paranoia, and schizophrenia. Some of his most notable works went
 				on to become the inspiration for major films such as Blade Runner and
-				minority report.
+				Minority Report.
 			</p>
 			<a
 				href='https://en.wikipedia.org/wiki/Philip_K._Dick'

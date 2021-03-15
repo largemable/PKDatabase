@@ -24,9 +24,9 @@
 		rgba(2, 14, 2, 1) 50%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0ff00",endColorstr="#020e02",GradientType=1);
+	
 }
-.home {
-}
+
 .header {
 	display: flex;
 	background-color: black;
@@ -108,4 +108,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e6eb",endCo
 }
 .book-details img:hover{
 	transform: scale(1.1);
+}
+footer{
+grid-column: 1/ span 3;
+align-items: center;
+font-size: 12px;
 }

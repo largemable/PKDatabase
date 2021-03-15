@@ -30,6 +30,7 @@ const BookDetails = ({ match }) => {
 			}
 		}
 	}
+
 	return (
 		<div className='book-details'>
 			{bookDetails.covers ? (

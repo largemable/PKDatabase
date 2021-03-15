@@ -9,7 +9,6 @@ import Home from './Home';
 function App() {
 	return (
 		<div className='App'>
-			<div className='about'></div>
 			<div className='header'>
 				<Header />
 			</div>
@@ -25,9 +24,13 @@ function App() {
 				/>
 			</main>
 			<footer>
-				<a href='http://openlibrary.org' target='_blank' rel='noreferrer'>
-					Open Library
-				</a>
+				<p>
+					The content on this website was sourced using the{' '}
+					<a href='http://openlibrary.org' target='_blank' rel='noreferrer'>
+						Open Library
+					</a>{' '}
+					API. App created by Mable Palombo, 2021
+				</p>
 			</footer>
 		</div>
 	);
