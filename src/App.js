@@ -9,9 +9,7 @@ import Home from './Home';
 function App() {
 	return (
 		<div className='App'>
-			<div className='about'>
-				{/* <img src={image} alt='portrait of the author' width='100%' /> */}
-			</div>
+			<div className='about'></div>
 			<div className='header'>
 				<Header />
 			</div>

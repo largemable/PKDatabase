@@ -11,15 +11,15 @@ const Books = () => {
 			})
 			.catch((err) => console.log(err));
 	}, []);
-	console.log(booksJson);
+
 	let cards = booksJson.map((book) => {
 		return (
-			<div>
+			<div key={`${book.key.slice(6)}`} className='cards'>
 				<Link
 					to={`/book${book.key.slice(6)}`}
 					key={book.key.slice(6)}
 					style={{ textDecoration: 'none' }}>
-					<h4>{book.title}</h4>
+					<h4 className='book_title'>{book.title}</h4>
 				</Link>
 			</div>
 		);

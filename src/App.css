@@ -50,12 +50,12 @@ h2 {
 	font-size: 12px;
 }
 nav {
-	background-color: grey;
+	/* background-color: grey; */
 	color: white;
 	grid-column: 1 / span 1;
 	grid-row: 2 / span 2;
 	border-radius: 12px;
-	height: 750px;
+	height: 1000px;
 	overflow-y: auto;
 }
 main {
@@ -64,4 +64,27 @@ main {
 	grid-row: 2 / span 2;
 	border-radius: 12px;
 	padding: 50px;
+}
+
+.header_button{
+	border: 1px solid white;
+	background-color: rgba(201, 191, 191, 0.58) ;
+	color: black;
+	transition: background-color .5s;
+	
+}
+.header_button:hover{
+	background-color:yellow;
+}
+.cards{
+	margin: 40px;
+	border: 2px solid white;
+padding: 5px;
+transition: background-color .5s;
+}
+.cards:hover{
+	background-color:rgba(201, 191, 191, 0.58) ;
+}
+.book_title{
+	color:white;
 }
