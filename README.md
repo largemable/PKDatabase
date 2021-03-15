@@ -33,8 +33,9 @@ View compiled
 This screen is visible only in development. It will not appear if the app crashes in production.
 Open your browser’s developer console to further inspect this error. Click the 'X' or hit ESC to dismiss this message.
 
+// SOLVED!
+
 //next steps
-// filter the fetch further so that it does not return anything that doesn't have a description value
-// add cover images to bookDetails
-// fill in the About component and create the proper routes and links
-//dynamically change the background color based on the book cover (too crazy?)
+// filter the fetch further so that it does not return anything that doesn't have a description value ---- this might be trickier than I thought. I might have to hardcode a disallow list and just filter by the ID or something along those lines. the API calls have different values.
+
+// fill in the About component

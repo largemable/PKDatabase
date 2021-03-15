@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 .App {
 	text-align: center;
 	display: grid;
@@ -29,7 +31,6 @@
 	display: flex;
 	background-color: black;
 	background-image: url('philip-k-dick.jpg');
-	/* background-repeat: no-repeat; */
 	background-position: top 30% right;
 	background-size: cover;
 	color: black;
@@ -38,6 +39,7 @@
 	border-radius: 12px;
 	align-items: flex-start;
 	padding: 40px;
+	font-family: 'Krona One', sans-serif;
 }
 .title {
 	font-size: 75px;
@@ -53,6 +55,8 @@ nav {
 	grid-column: 1 / span 1;
 	grid-row: 2 / span 2;
 	border-radius: 12px;
+	height: 750px;
+	overflow-y: auto;
 }
 main {
 	background-color: rgb(206, 200, 200);

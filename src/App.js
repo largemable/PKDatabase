@@ -20,8 +20,9 @@ function App() {
 			</nav>
 			<main>
 				<Route path='/' exact component={Home} />
+				<Route path='/about' component={About} />
 				<Route
-					path='/:book'
+					path='/book/:book'
 					render={(routerProps) => <BookDetails match={routerProps.match} />}
 				/>
 			</main>

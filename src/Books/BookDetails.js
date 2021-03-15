@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 const BookDetails = ({ match }) => {
 	const [bookDetails, setBookDetails] = useState([]);
-	console.log(match.params.book);
+	// console.log(match.params.book);
 	useEffect(() => {
 		const url = `https://openlibrary.org/works/${match.params.book}.json`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
-				console.log(res);
+				// console.log(res);
 				setBookDetails(res);
 			});
 	}, [match.params.book]);
 
-	console.log(bookDetails);
+	// console.log(bookDetails);
 	if (!bookDetails) {
 		return null;
 	}

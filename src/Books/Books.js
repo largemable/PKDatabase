@@ -10,12 +10,13 @@ const Books = () => {
 				setBooksJson(res.docs.slice(0, 51));
 			})
 			.catch((err) => console.log(err));
-	});
+	}, []);
+	console.log(booksJson);
 	let cards = booksJson.map((book) => {
 		return (
 			<div>
 				<Link
-					to={`${book.key.slice(6)}`}
+					to={`/book${book.key.slice(6)}`}
 					key={book.key.slice(6)}
 					style={{ textDecoration: 'none' }}>
 					<h4>{book.title}</h4>
