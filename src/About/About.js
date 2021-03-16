@@ -3,7 +3,7 @@ import photo from './Pkdick.jpeg';
 
 const About = () => {
 	return (
-		<div>
+		<div className='about'>
 			<h1>About The Author</h1>
 			<img src={photo} alt='photograph of Philip K Dick' height='400px' />
 			<h2>Philip Kindred Dick</h2>

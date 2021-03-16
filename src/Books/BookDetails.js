@@ -7,12 +7,10 @@ const BookDetails = ({ match }) => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
-				// console.log(res);
 				setBookDetails(res);
 			});
 	}, [match.params.book]);
 
-	// console.log(bookDetails);
 	if (!bookDetails) {
 		return null;
 	}

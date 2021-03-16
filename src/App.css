@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
 
 .App {
 	text-align: center;
@@ -48,6 +49,7 @@
 }
 h2 {
 	font-size: 12px;
+	
 }
 nav {
 	color: white;
@@ -67,9 +69,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e6eb",endCo
 	grid-row: 2 / span 2;
 	border-radius: 12px;
 	padding: 50px;
-	
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-weight: bolder;
 }
-
+main a{
+	color: black;
+}
 .header_button{
 	border: 1px solid white;
 	background-color: rgba(201, 191, 191, 0.58) ;
@@ -92,6 +97,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e6eb",endCo
 	display: block;
 	color:white;
 	padding: 20px;
+	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: bold;
 }
 .book-details {
@@ -113,4 +119,36 @@ footer{
 grid-column: 1/ span 3;
 align-items: center;
 font-size: 12px;
+}
+
+@media (max-width: 768px) {
+	.App{
+		display: block;
+	}
+	.header{
+		background-image:none;
+		background-color: white;
+		max-height:150px;
+		display: block;
+		
+	}
+
+	nav{
+max-height: 200px;
+	}
+.header_button{
+	font-size: 12px;
+}
+	.book-details img{
+		max-height: 200px;
+	}
+	.title{
+		font-size:50px;
+	}
+	.cards{
+		margin: 20px;
+	}
+	.about img{
+		height:200px;
+	}
 }
